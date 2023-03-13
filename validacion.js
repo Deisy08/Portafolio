@@ -1,24 +1,45 @@
+const inputs = document.querySelectorAll('input');
+const textarea = document.querySelector('#mensaje');
+
+inputs.forEach((input) => {
+   input.addEventListener('blur', (input) => {
+    valida(input.target)
+   })
+})
+
+textarea.addEventListener('blur', (textarea) => {
+  validando(textarea.target)
+})
+
 function valida(input) {
     const tipoDeInput = input.dataset.tipo;
-    if (validadores[tipoDeInput]) {
-      validadores[tipoDeInput](input);
-    }
   
     if (input.validity.valid) {
-      input.parentElement.classList.remove("input-container--invalid");
-      input.parentElement.querySelector(".input-message-error").innerHTML = "";
+		input.parentElement.classList.remove("input-container--invalid");
+		input.parentElement.querySelector(".input-mensaje-error").innerHTML = "";
     } else {
-      input.parentElement.classList.add("input-container--invalid");
-      input.parentElement.querySelector(".input-message-error").innerHTML =
-        mostrarMensajeDeError(tipoDeInput, input);
+		input.parentElement.classList.add("input-container--invalid");
+		input.parentElement.querySelector(".input-mensaje-error").innerHTML = mostrarMensajeDeError(tipoDeInput, input);
     }
+}
+
+function validando(textarea) {
+  const tipoDeTextarea = textarea.dataset.tipo;
+
+  if (textarea.validity.valid) {
+    textarea.parentElement.classList.remove("textarea-container--invalid");
+    textarea.parentElement.querySelector(".textarea-mensaje-erro").innerHTML = "";
+  } else {
+    textarea.parentElement.classList.add("textarea-container--invalid");
+    textarea.parentElement.querySelector(".textarea-mensaje-erro").innerHTML = verMensajeDeError(tipoDeTextarea, textarea);
+  }
 }
   
 const tipoDeErrores = [
-    "valueMissing",
-    "typeMismatch",
-    "patternMismatch",
-    "customError",
+  "valueMissing",
+  "typeMismatch",
+  "patternMismatch",
+  "customError",
 ];
   
 const mensajesDeError = {
@@ -31,31 +52,37 @@ const mensajesDeError = {
     },
     asunto: {
       valueMissing: "Este campo no puede estar vacío",
-      patternMismatch: "Este campo puede contener hasta 20 caracteres.",
+      patternMismatch: "El campo puede contener de 5 a 50 caracteres.",
     },
     mensaje: {
-        valueMissing: "Este campo no puede estar vacío",
-        patternMismatch: "El campo mensaje puede contener desde 10 hasta 50 caracteres.", 
+      valueMissing: "Este campo no puede estar vacío",
+      patternMismatch: "El campo mensaje puede contener desde 10 caracteres."
     }
 };
   
-function mostrarMensajeDeError(tipoDeInput, input) {
+function verMensajeDeError(tipoDeTextarea, textarea) {
     let mensaje = "";
     tipoDeErrores.forEach((error) => {
-      if (input.validity[error]) {
-        console.log(tipoDeInput, error);
-        console.log(input.validity[error]);
-        console.log(mensajesDeError[tipoDeInput][error]);
-        mensaje = mensajesDeError[tipoDeInput][error];
+      if (textarea.validity[error]) {
+        console.log(tipoDeTextarea, error);
+        console.log(textarea.validity[error]);
+        console.log(mensajesDeError[tipoDeTextarea][error]);
+        mensaje = mensajesDeError[tipoDeTextarea][error];
       }
+      
     });
     return mensaje;
 }
 
-const inputs = document.querySelectorAll('input');
-
-inputs.forEach((input) => {
-   input.addEventListener('blur', (input) => {
-    valida(input.target)
-   })
-})
+function mostrarMensajeDeError(tipoDeInput, input) {
+  let mensaje = "";
+  tipoDeErrores.forEach((error) => {
+    if (input.validity[error]) {
+      console.log(tipoDeInput, error);
+      console.log(input.validity[error]);
+      console.log(mensajesDeError[tipoDeInput][error]);
+      mensaje = mensajesDeError[tipoDeInput][error];
+    }
+  });
+  return mensaje;
+}
