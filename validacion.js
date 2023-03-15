@@ -1,5 +1,5 @@
 const inputs = document.querySelectorAll('input');
-const textarea = document.querySelector('#mensaje');
+const textarea = document.querySelector('textarea');
 
 inputs.forEach((input) => {
    input.addEventListener('blur', (input) => {
@@ -28,10 +28,10 @@ function validando(textarea) {
 
   if (textarea.validity.valid) {
     textarea.parentElement.classList.remove("textarea-container--invalid");
-    textarea.parentElement.querySelector(".textarea-mensaje-erro").innerHTML = "";
+    textarea.parentElement.querySelector(".textarea-mensaje-error").innerHTML = "";
   } else {
     textarea.parentElement.classList.add("textarea-container--invalid");
-    textarea.parentElement.querySelector(".textarea-mensaje-erro").innerHTML = verMensajeDeError(tipoDeTextarea, textarea);
+    textarea.parentElement.querySelector(".textarea-mensaje-error").innerHTML = verMensajeDeError(tipoDeTextarea, textarea);
   }
 }
   
@@ -54,33 +54,25 @@ const mensajesDeError = {
       valueMissing: "Este campo no puede estar vacío",
       patternMismatch: "El campo puede contener de 5 a 50 caracteres.",
     },
-    mensaje: {
+    message: {
       valueMissing: "Este campo no puede estar vacío",
-      patternMismatch: "El campo mensaje puede contener desde 10 caracteres."
     }
 };
   
 function verMensajeDeError(tipoDeTextarea, textarea) {
-    let mensaje = "";
-    tipoDeErrores.forEach((error) => {
-      if (textarea.validity[error]) {
-        console.log(tipoDeTextarea, error);
-        console.log(textarea.validity[error]);
-        console.log(mensajesDeError[tipoDeTextarea][error]);
-        mensaje = mensajesDeError[tipoDeTextarea][error];
-      }
-      
-    });
-    return mensaje;
+  let mensaje = "";
+  tipoDeErrores.forEach((error) => {
+    if (textarea.validity[error]) {
+      mensaje = mensajesDeError[tipoDeTextarea][error];
+    }
+  });
+  return mensaje;
 }
 
 function mostrarMensajeDeError(tipoDeInput, input) {
   let mensaje = "";
   tipoDeErrores.forEach((error) => {
     if (input.validity[error]) {
-      console.log(tipoDeInput, error);
-      console.log(input.validity[error]);
-      console.log(mensajesDeError[tipoDeInput][error]);
       mensaje = mensajesDeError[tipoDeInput][error];
     }
   });

@@ -1,3 +1,61 @@
+.contact-subtext-p{
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.contact-contenetor{
+    display: flex;
+    justify-content: center;
+}
+
+.contacto-img{
+    display: flex;
+    justify-content: center;
+}
+
+.form_icon{
+    width: 40vw;
+    border-radius: 10%;
+}
+
+/*contacto*/
+
+section.formcontato {
+    background-color: #d6ab6980;
+    padding: 16px;
+    padding-top: 25px;
+}
+
+.contact-img{
+    width: 50px;
+}
+
+img.contact-img {
+    display: none;
+}
+
+h3.contact-subtext {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+}
+
+h2.contact-title {
+    font-weight: 700;
+    font-size: 22px;
+    padding: 10px;
+
+}
+
+section.formcontato form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+}
+
 .input-container {
     position: relative;
     margin-bottom: 1rem;
@@ -8,7 +66,7 @@
 }
 
 section.formcontato form input {
-    border: transparent;
+    border: none;
     flex-grow: 1;
     margin: 10px 0px;
     height: 56px;
@@ -77,17 +135,23 @@ form input:focus {
 }
 
 /*texarea*/
+
+.textarea-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}  
   
-form textarea:focus {
-    border-bottom: solid 2px #2A7AE4;
-}
-
-textarea::placeholder {
+.textarea::placeholder {
+    visibility: hidden;
     color: #464646;
-    font-family: 'Raleway'
+    font-family: 'Raleway';
+    background: transparent;
 }
 
-.textarea {
+.form .textarea {
     border: none;
     box-sizing: border-box;
     width: 80vw;
@@ -97,21 +161,13 @@ textarea::placeholder {
     box-shadow: 0 0 5px #ff9a00;
     flex-grow: 1;
     margin: 10px 0px;
+    resize: none;
 }
 
-.textarea-container{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    margin-bottom: 1rem;
-}
-  
-.textarea::placeholder {
-    visibility: hidden;
-}
-  
+form textarea:focus {
+    border-bottom: solid 2px #2A7AE4;
+}  
+
 .textarea:focus {
     outline: none;
 }
@@ -137,6 +193,7 @@ textarea::placeholder {
   
 .textarea-container--invalid .textarea {
     border: 2px solid #cb3838;
+    border-radius: 40px;
     box-shadow: 0 0 5px brown;
 }
   
@@ -144,13 +201,13 @@ textarea::placeholder {
     color: red;
 }
   
-.textarea-mensaje-erro {
+.textarea-mensaje-error {
     display: none;
 }
   
-.textarea-container--invalid .textarea-mensaje-erro {
-    display: block;
+.textarea-container--invalid .textarea-mensaje-error {
     color: rgba(209, 75, 75, 0.911);
+    display: block;
     margin-top: 0.5rem;
     padding-left: 0.5rem;
     font-weight: bold;
@@ -170,6 +227,7 @@ textarea::placeholder {
     background-color: #cb3838;
     color: #fff4dc;
     margin: 15px 0;
+    border-radius: 45px;
 }
 
 .form button:active { 
@@ -197,6 +255,10 @@ textarea::placeholder {
     div.rodape{
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+
+    .form_icon{
+        width: 340px;
     }
 }
 

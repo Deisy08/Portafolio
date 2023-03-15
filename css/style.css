@@ -249,43 +249,6 @@ span.experience-demo button {
     margin-top: 5px;
 }
 
-/*contecto*/
-
-section.formcontato {
-    background-color: #d6ab6980;
-    padding: 16px;
-    padding-top: 25px;
-}
-
-.contact-img{
-    width: 50px;
-}
-
-img.contact-img {
-    display: none;
-}
-
-h3.contact-subtext {
-    font-weight: 500;
-    font-size: 16px;
-    padding: 10px;
-    margin: 0;
-}
-
-h2.contact-title {
-    font-weight: 700;
-    font-size: 22px;
-    padding: 10px;
-
-}
-
-section.formcontato form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 10px;
-}
-
 /*footeer*/
 
 section.footer {
