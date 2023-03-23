@@ -7,14 +7,11 @@
 </p>
 
 
-### Mi objetivo era la contrucción de la página principal este muy bien estructurado. 
-
 ## 📜¿Qué encontrarás?
 
 #### Header o barra de navegación (incluye botón para descargar CV).
 #### Banner con imagen y breve introducción.
-#### Secciones: Sobre mi. Soft Skills. Hard Skills. Estudios o Formación. Proyectos como programador. Contáctame.
-#### #10084;.
+#### Secciones: Sobre mi. Soft Skills. Hard Skills. Estudios o Formación. Proyectos como programador. Contáctame.#10084;.
 
 ## 🥇 Objetivo:
 #### La página fue contruida como proyecto o Challlenge planteado por [Alura Latam](https://www.aluracursos.com/) y [Oracle Next Education (One)](https://www.oracle.com/co/education/oracle-next-education/). 
@@ -26,9 +23,9 @@
 
 #### Los lenguajes utilizados fueron:
 
-### HTML5
-### JavaScript
-### Css3
+#### HTML
+#### JavaScript
+#### Css
 
 
 ## Observaciones
