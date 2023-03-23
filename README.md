@@ -9,9 +9,10 @@
 
 ## 📜¿Qué encontrarás?
 
-#### Header o barra de navegación (incluye botón para descargar CV).
+#### Header o barra de navegación 
+#### incluye enlaces(incluye botón para descargar CV).
 #### Banner con imagen y breve introducción.
-#### Secciones: Sobre mi. Soft Skills. Hard Skills. Estudios o Formación. Proyectos como programador. Contáctame.#10084;.
+#### Secciones: Sobre mi, Soft Skills, Estudios o Formación, Proyectos como programador. Contáctame.
 
 ## 🥇 Objetivo:
 #### La página fue contruida como proyecto o Challlenge planteado por [Alura Latam](https://www.aluracursos.com/) y [Oracle Next Education (One)](https://www.oracle.com/co/education/oracle-next-education/). 
