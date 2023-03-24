@@ -65,10 +65,10 @@ select:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #a52a2ade;
-    box-shadow: 0 0 10px #a52a2ade;
+    border-bottom: 2px solid #cb760a;
+    box-shadow: 0 0 20px #cb760a;
     padding: 15px 20px;
-    background: #c71e607a;
+    background: #e8a249;
 }
 
 .menu header{
@@ -83,6 +83,7 @@ select:focus {
 
 .menu nav{
     display: flex;
+    padding-right: 15px;
 }
 
 .menu-list-item-c{
