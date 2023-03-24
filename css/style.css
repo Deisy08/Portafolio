@@ -44,7 +44,7 @@ a {
 }
 
 a:hover{
-    color: #2A7AE4;
+    color: #132d50;
     text-decoration: underline;
 }
 
@@ -242,11 +242,6 @@ select:focus {
     margin: 0 32px 20px 32px;
 }
 
-.experiencia-box:hover{
-    box-shadow: 5px 5px 20px rgba(219, 159, 80, 0.432);
-    transform: translateY(-3%);
-}
-
 span.experience-repo button {
     display: flex;
     flex-direction: row;
@@ -415,6 +410,11 @@ div.rodape {
     .experiencia-box img {
         width: 85%;
     }
+
+    .experiencia-box:hover{
+        box-shadow: 5px 5px 20px rgba(219, 159, 80, 0.432);
+        transform: translateY(-3%);
+    }
 }
 
 @media (min-width: 1000px) {
@@ -553,6 +553,11 @@ div.rodape {
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 15px 0 10px 0;
+    }
+
+    .experiencia-box:hover{
+        box-shadow: 5px 5px 20px rgba(219, 159, 80, 0.432);
+        transform: translateY(-3%);
     }
 
     div.experiencia-box {
