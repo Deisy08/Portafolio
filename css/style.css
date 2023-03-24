@@ -12,6 +12,24 @@ body {
     overflow-x: hidden;
 }
 
+.move{
+    animation: moverse 3s ease-in-out alternate;
+}
+
+@keyframes moverse {
+    0% {
+        transform: translate(0,-10%);
+    }
+    50% {
+        box-shadow: 0 20px 30px rgba(95, 117, 42, 0.753);
+    }
+    100% {
+        transform: translate(0, 10%);
+    }
+}
+
+
+
 ol,
 ul,
 li {
@@ -223,6 +241,11 @@ select:focus {
     margin: 0 32px 20px 32px;
 }
 
+.experiencia-box:hover{
+    box-shadow: 5px 5px 20px rgba(219, 159, 80, 0.432);
+    transform: translateY(-3%);
+}
+
 span.experience-repo button {
     display: flex;
     flex-direction: row;
@@ -279,8 +302,9 @@ div.rodape {
 
     /*title*/
     .title {
-        margin-bottom: 10px;
+        margin: 25px 0;
         padding: 20px;
+
     }
 
     .title-div {
@@ -454,7 +478,7 @@ div.rodape {
     }
 
     div.about-container {
-        height: 235px;
+        height: 290px;
     }
 
     div.about-container img{
