@@ -49,14 +49,14 @@ h2.contact-title {
 
 }
 
-section.formcontato form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 10px;
+.form__label{
+    font-size: 20px;
+    margin-bottom: 1rem;
+    font-weight: bold;
 }
 
-.input-container {
+.input-container{
+    font-weight: 300;
     position: relative;
     margin-bottom: 1rem;
     display: flex;
@@ -64,159 +64,100 @@ section.formcontato form {
     justify-content: flex-end;
     box-sizing: border-box;
 }
-
-section.formcontato form input {
-    border: none;
-    flex-grow: 1;
-    margin: 10px 0px;
-    height: 56px;
+  
+.input {
     box-sizing: border-box;
-    width: 80vw;
     padding: 1.375rem 0.5rem 0.5rem;
-    border-radius: 40px;
-    background-color: #fafad233;
-    box-shadow: 0 0 5px #ff9a00;
+    height: 3.25rem;
+    width: 95%;
+    border-radius: 7px;
 }
 
-.input::placeholder {
+.mensaje{
+    box-sizing: border-box;
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 4rem;
+    border-radius: 7px;
+    width: 95%;
+}
+
+.mensaje-error{
+    display: none;
+}
+
+.contact-form *::placeholder {
     visibility: hidden;
-    color: #464646;
-    font-family: 'Raleway';
-    background: transparent;
+    color: #00000000;
 }
-
-form input:focus {
-    border-bottom: solid 2px #2A7AE4;
-}
-
-.input:focus {
+  
+.contact-form *:focus {
     outline: none;
 }
   
-.input-label {
+.label{
     position: absolute;
     top: 1.375rem;
     left: 0.5rem;
-    font-size: 15px;
+    font-size: 20px;
     transition: all 0.25s;
 }
   
-.input:not(:placeholder-shown) + .input-label,
-.input:focus + .input-label {
+.contact-form *:not(:placeholder-shown) + .label,
+.contact-form *:focus + .label {
     font-size: 0.875rem;
     top: 0.25rem;
     transition: all 0.25s;
 }
-  
-.input-container--invalid {
+
+.contact-form [required]:valid {
+    border: thin solid greenyellow;
+}
+
+.contact-form [required]:invalid {
+    border: thin solid red;
+}
+
+.container--invalid {
     margin-bottom: 0.5rem;
 }
   
-.input-container--invalid .input {
-    border: 2px solid #cb3838;
-    border-radius: 40px;
-    box-shadow: 0 0 5px brown;
+.container--invalid .input {
+    border: 1px solid red;
+    border-radius: 7px;
 }
   
-.input-container--invalid .input-label {
+.container--invalid .label{
     color: red;
 }
-  
-.input-mensaje-error {
-    display: none;
-}
-  
-.input-container--invalid .input-mensaje-error {
-    color: rgba(209, 75, 75, 0.911);
+
+.container--invalid .mensaje-error {
+    color: red;
     display: block;
     margin-top: 0.5rem;
     padding-left: 0.5rem;
-    font-weight: bold;
 }
 
-/*texarea*/
-
-.textarea-container{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: flex-end;
-    box-sizing: border-box;
-}  
-  
-.textarea::placeholder {
-    visibility: hidden;
-    color: #464646;
-    font-family: 'Raleway';
-    background: transparent;
-}
-
-.form .textarea {
-    border: none;
-    box-sizing: border-box;
-    width: 80vw;
-    padding: 1.375rem 0.5rem 0.5rem;
-    border-radius: 40px;
-    background-color: #fafad233;
-    box-shadow: 0 0 5px #ff9a00;
-    flex-grow: 1;
-    margin: 10px 0px;
-    resize: none;
-}
-
-form textarea:focus {
-    border-bottom: solid 2px #2A7AE4;
-}  
-
-.textarea:focus {
-    outline: none;
-}
-
-.textarea-label{
-    position: absolute;
-    font-size: 15px;
-    left: 0.5rem;
-    top: 1.375rem; 
-    transition: all 0.25s;
-}
-
-.textarea:not(:placeholder-shown) + .textarea-label,
-.textarea:focus + .textarea-label {
-    font-size: 0.875rem;
-    top: 0.25rem;
-    transition: all 0.25s;
-}
-  
-.textarea-container--invalid {
-    margin-bottom: 0.5rem;
-}
-  
-.textarea-container--invalid .textarea {
-    border: 2px solid #cb3838;
-    border-radius: 40px;
-    box-shadow: 0 0 5px brown;
-}
-  
-.textarea-container--invalid .textarea-label {
-    color: red;
-}
-  
-.textarea-mensaje-error {
+.none{
     display: none;
 }
-  
-.textarea-container--invalid .textarea-mensaje-error {
-    color: rgba(209, 75, 75, 0.911);
-    display: block;
-    margin-top: 0.5rem;
-    padding-left: 0.5rem;
-    font-weight: bold;
+
+.contact-form-loader{
+    text-align: center;
+    margin-top: 5px;
 }
-  
+
+.contact-form-response{
+    font-size: 20px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
 
 /*button*/
 
-.form button {
+.button {
     border: 2px #a52a2a;
     border-style: outset;
     display: flex;
@@ -230,7 +171,7 @@ form textarea:focus {
     border-radius: 45px;
 }
 
-.form button:active { 
+.button:active { 
     border: none;
     border-style: dotted;
 }

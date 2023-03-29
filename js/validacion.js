@@ -1,5 +1,5 @@
 const inputs = document.querySelectorAll('input');
-const textarea = document.querySelector('textarea');
+const $form = document.querySelector('.contact-form');
 
 inputs.forEach((input) => {
    input.addEventListener('blur', (input) => {
@@ -7,32 +7,16 @@ inputs.forEach((input) => {
    })
 })
 
-textarea.addEventListener('blur', (textarea) => {
-  validando(textarea.target)
-})
-
 function valida(input) {
     const tipoDeInput = input.dataset.tipo;
   
     if (input.validity.valid) {
-		input.parentElement.classList.remove("input-container--invalid");
-		input.parentElement.querySelector(".input-mensaje-error").innerHTML = "";
+		input.parentElement.classList.remove("container--invalid");
+		input.parentElement.querySelector(".mensaje-error").innerHTML = "";
     } else {
-		input.parentElement.classList.add("input-container--invalid");
-		input.parentElement.querySelector(".input-mensaje-error").innerHTML = mostrarMensajeDeError(tipoDeInput, input);
+		input.parentElement.classList.add("container--invalid");
+		input.parentElement.querySelector(".mensaje-error").innerHTML = mostrarMensajeDeError(tipoDeInput, input);
     }
-}
-
-function validando(textarea) {
-  const tipoDeTextarea = textarea.dataset.tipo;
-
-  if (textarea.validity.valid) {
-    textarea.parentElement.classList.remove("textarea-container--invalid");
-    textarea.parentElement.querySelector(".textarea-mensaje-error").innerHTML = "";
-  } else {
-    textarea.parentElement.classList.add("textarea-container--invalid");
-    textarea.parentElement.querySelector(".textarea-mensaje-error").innerHTML = verMensajeDeError(tipoDeTextarea, textarea);
-  }
 }
   
 const tipoDeErrores = [
@@ -45,10 +29,12 @@ const tipoDeErrores = [
 const mensajesDeError = {
     nombre: {
       valueMissing: "El campo nombre no puede estar vacío",
+      patternMismatch: "El campo nombre no puede haber números.",
     },
     email: {
       valueMissing: "El campo correo no puede estar vacío",
       typeMismatch: "El correo no es válido",
+      patternMismatch: "En este campo no te olvides de poner el @.",
     },
     asunto: {
       valueMissing: "Este campo no puede estar vacío",
@@ -57,16 +43,6 @@ const mensajesDeError = {
     message: {
       valueMissing: "Este campo no puede estar vacío",
     }
-};
-  
-function verMensajeDeError(tipoDeTextarea, textarea) {
-  let mensaje = "";
-  tipoDeErrores.forEach((error) => {
-    if (textarea.validity[error]) {
-      mensaje = mensajesDeError[tipoDeTextarea][error];
-    }
-  });
-  return mensaje;
 }
 
 function mostrarMensajeDeError(tipoDeInput, input) {
@@ -77,4 +53,29 @@ function mostrarMensajeDeError(tipoDeInput, input) {
     }
   });
   return mensaje;
+}
+
+
+document.addEventListener("DOMContentLoaded",(e)=>{
+  loader()
+})
+
+function loader(){
+  document.addEventListener("submit", (e)=>{
+  e.preventDefault()
+      alert("enviando formulario")
+
+      const $loader = document.querySelector(".contact-form-loader")
+       $response = document.querySelector(".contact-form-response")
+
+      $loader.classList.remove("none") 
+
+      setTimeout(()=>{
+          $loader.classList.add("none") 
+          $response.classList.remove("none") 
+          $form.reset();
+
+          setTimeout(()=> $response.classList.add("none"),3000 )
+      },3000)
+  })
 }
