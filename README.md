@@ -6,6 +6,7 @@
     <img width="450" heigth="200" src="./assets/foto_read.png">
 </p>
 
+#### [enlace a mi portafolio](https://deisy08.github.io/Portafolio/)
 
 ## 📜¿Qué encontrarás?
 
