@@ -412,10 +412,6 @@ div.rodape {
         width: 85%;
     }
 
-    .experiencia-box:hover{
-        box-shadow: 5px 5px 20px rgba(219, 159, 80, 0.432);
-        transform: translateY(-3%);
-    }
 }
 
 @media (min-width: 1000px) {
