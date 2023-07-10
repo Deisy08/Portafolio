@@ -227,10 +227,8 @@ h2.contact-title {
     }
 
     .formcontato .contact-text {
-        display: flex;
-        flex-direction: column;
         margin-left: 2%;
-        margin-top: -2%;
+        margin-top: 5%;
     }
 
     .formcontato .izquerda img.contact-img {
@@ -258,17 +256,10 @@ h2.contact-title {
     section.formcontato form textarea {
         width: 100%;
     }
-    .input-container input.input{
-        width: 50vw;
-    }
-
-    .textarea-container textarea.textarea{
-        width: 50vw;
-    }
 }
 
 @media (min-width: 1440px) {
     section.formcontato {
-        padding: 64px 172px;
+        padding: 64px calc(50vh - 400px);
     }
 }

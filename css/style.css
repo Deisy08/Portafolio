@@ -452,7 +452,7 @@ div.rodape {
     /*title*/
 
     .title {
-        height: 60vh;
+        height: 35vh;
         background: linear-gradient(180deg, rgba(32,18,115,1) , rgba(175,185,232,1) );
         justify-content: center;
     }
@@ -538,6 +538,8 @@ div.rodape {
         height: 200px;
         border-radius: 20px;
         margin: 10px 0;
+        background: rgba(0, 0, 0,0.5);
+        opacity: 0.75;
     }
 
     .experience-description {
@@ -553,30 +555,56 @@ div.rodape {
     
 
     /*Menu*/
-
+    .menuBarra {
+        padding: 20px 30px;
+    }
     
 
 
     /*title*/
+    .title-container{
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        padding-top: 0;
+    }
 
+    .title {
+        height: 40vh;
+    }
     
+    .title-texto {
+        max-width: 500px;
+    }
 
     /*sobre mi*/
-
+    .about {
+        padding: 40px calc(50vh - 400px);
+    }
     
 
     /*Skills*/
-
+    .skills {
+        padding: 40px calc(50vh - 400px);;
+    }
     
 
     /*Hobbies*/
-
+    .hobbies {
+        padding: 40px calc(50vh - 400px);
+    }
 
     /*formación academica*/
 
 
     /*formación profecional*/
+    .experience {
+        padding: 40px calc(50vh - 400px);
+    }
 
+    .experiencia-box {
+        margin: 0 0 20px;
+        width: 350px;
+    }
     
 
     /*Footer*/
@@ -585,26 +613,30 @@ div.rodape {
 
 @media (min-width: 1440px) {
 
-    /*menu*/
-
-
-    /*titluto*/
-
-
     /*sobre mi*/
-
- 
-    /*skills*/
-
+    .about {
+        padding: 40px calc(50vh - 300px);
+    }
     
 
-    /*hobbie*/
+    /*Skills*/
+    .skills {
+        padding: 40px calc(50vh - 300px);;
+    }
+    
 
+    /*Hobbies*/
+    .hobbies {
+        padding: 40px calc(50vh - 300px);
+    }
 
     /*formación academica*/
 
 
-    /*formación profesional*/
+    /*formación profecional*/
+    .experience {
+        padding: 40px calc(50vh - 300px);
+    }
 
     
 }
