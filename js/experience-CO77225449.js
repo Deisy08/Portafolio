@@ -23,19 +23,11 @@ const experienciaData = [
     demoLink: '#'
   },
   {
-    imageSrc: 'assets/heflix.png',
-    title: 'Heflix',
-    challenge: 'Challenge Oracle',
-    repoLink: 'https://github.com/Deisy08/heflix',
-    demoLink: 'https://heflix-lac.vercel.app/'
-  },
-  {
     imageSrc: 'assets/forca2_print.png',
     title: 'Mi Portafolio',
     challenge: 'Challenge Oracle',
     repoLink: 'https://github.com/Deisy08/Portafolio'
   }
-  
 ];
 
 // Recorre los datos de la experiencia y crea los elementos HTML

@@ -15,37 +15,22 @@
 <body>
     <div >
         <section class="menu">
-            
-            <div class="btn-menu menuBarra">
-                <label for="btn-menu" class="box-shadow-menu"></label>
-                <nav>
-                    <ul class="menu-list">
-                        <li class="menu-list-item"><a href="#sobre-mi" >Sobre mi</a></li>
-                        <li class="menu-list-item"><a href="#skills" >Skills</a></li>
-                        <li class="menu-list-item"><a href="#hobbies" >Hobbies</a></li>
-                        <li class="menu-list-item"><a href="#xp" >Proyectos</a></li>
-                        <li class="menu-list-item"><a href="#contacto" >Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <input type="checkbox" id="btn-menu">
-
-            <div class="menuBarra-container">
-                <div class="cont-menu">
-                    <nav>
-                        <a href="#sobre-mi">sobre-mi</a>
-                        <a href="#skills">skills</a>
-                        <a href="#hobbies">hobbies</a>
-                        <a href="#xp">proyectos</a>
-                        <a href="#contacto">contacto</a>
-                    </nav>
-                    <label for="btn-menu" class="icon-equis">✖️</label>
-                </div>
-                
+            <nav>
+                <ul class="menu-list">
+                    <li class="menu-list-item"><a href="#sobre-mi" >Sobre mi</a></li>
+                    <li class="menu-list-item"><a href="#skills" >Skills</a></li>
+                    <li class="menu-list-item"><a href="#hobbies" >Hobbies</a></li>
+                    <li class="menu-list-item"><a href="#formacion" >Formación</a></li>
+                    <li class="menu-list-item"><a href="#xp" >Proyectos</a></li>
+                    <li class="menu-list-item"><a href="#contacto" >Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menuBarra">
+                <a href="#menu" class="box-shadow-menu">
+                </a>
             </div>
         </section>
-        
+
         <section class="title espacios">
             
                 <div class="title-container">
@@ -115,13 +100,15 @@
             </div>
         </section>
         
-        <section class="formcontato " id="contacto">
+
+        <!--
+        <section   class="formcontato " id="contacto">
                 <div  class="contact">
                     <div class="izquerda">
                         <img class="contact-img" src="assets\contact_image.png">
                     </div>
                     <div class="contact-text">
-                        <h2>Contacto</h2>
+                        <h2 class="section-title">Contacto</h2>
                         <h3 class="contact-subtext">¿Quieres contactarme?</h3>
                         <h3 class="contact-subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
                         <form action="https://formsubmit.co/672d615985b1c73cab5afa4b682ad52a" method="POST" class="contact-form" name="form">
@@ -162,7 +149,7 @@
                         
                     </div>
                 </div>
-        </section>
+        </section>-->
 
         <section class="footer">
             <div class="rodape">
@@ -185,6 +172,5 @@
 <script src="./js/skills.js"></script>
 <script src="./js/hobbies.js"></script>
 <script src="./js/experience.js"></script>
-<script src="./js/menu.js"></script>
 </body>
 </html>
