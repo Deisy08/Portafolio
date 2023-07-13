@@ -16,7 +16,7 @@ const experienciaData = [
     demoLink: 'https://deisy08.github.io/Blog_BTS/'
   },
   {
-    imageSrc: 'assets/secretcode_print.png',
+    imageSrc: 'assets/astromeliageek.png',
     title: 'AstromeliaGreek',
     challenge: 'Challenge Oracle',
     repoLink: 'https://github.com/Deisy08/AstromeliaGeek',

@@ -10,10 +10,8 @@
 body {
     cursor: pointer;
     line-height: 1;
-}
-
-.espacios{
-    padding: 0 20px;
+    color: #111111;
+    background: #e51a4c;
 }
 
 ol,
@@ -49,7 +47,6 @@ select:focus {
 /*menu*/
 .menu{
     text-align: start;
-    background: linear-gradient(0deg, rgb(32 18 115) 32%, rgba(206,214,255,1) 55%, rgb(32 18 115) 81%);
 }
 
 .menu header{
@@ -159,7 +156,7 @@ select:focus {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(0deg, rgba(32,18,115,1) 16%, rgba(175,185,232,1) 58%, rgba(32,18,115,1) 90%);
+    padding: 0 20px;
 }
 
 .title-container{
@@ -210,47 +207,24 @@ select:focus {
     font-size: 25px;
     line-height: 35px;
     text-align: center;
-    color: gainsboro;
 }
 
-.title-btn{
-    text-align: center;
-}
-
-.title-btn img{
-    width: 140px;
-    height: 70px;
-}
-
-/*sobre mi*/
-
-.about{
-    background: linear-gradient(180deg,#201273 5%,#ced6ff 12%,#ced6ff 80%);
-    padding: 40px 20px;
-}
-
-.about-container h3{
-    font-size: 30px;
-    font-weight: 700;
-    color: #454545;
-    font-family: 'Playfair Display', serif;
-    padding-bottom: 10px;
-}
-
-/*skills*/
-
-.skills{
-    padding: 40px 0;
-    background: linear-gradient(180deg,#ced6ff 4%,#201273 12%,#4d3ea7 25%,#4d3ea7 80%,#201273 90%);
-}
-
+/*titulo --*/
 .section-title {
     font-size: 30px;
     font-weight: 700;
     font-family: 'Playfair Display', serif;
-    padding: 0 20px 20px;
-    color: #454545;
+    margin-bottom: 20px;
 }
+
+.espacios{
+    padding: 40px calc(50vw - 160px);
+}
+
+/*sobre mi*/
+
+
+/*skills*/
 
 .skills-line{
     display: flex;
@@ -260,15 +234,14 @@ select:focus {
 /*cajas */
 .box{
     display: flex;
-    background: #30c2e3c7;
-    border: #1835c5;
+    border: 5px solid #510a0a;
+    background-color: rgb(255 191 191);
     border-style: inset;
     border-radius: 10px;
     margin: 10px;
     padding: 30px 10px 10px 5px;
     width: 120px;
     height: 120px;
-    color: gainsboro;
 }
 
 .box:active{
@@ -278,25 +251,11 @@ select:focus {
 
 /*hobbies*/
 
-.hobbies{
-    background: linear-gradient(180deg,#201273 8%,#afb9e8 18%);
-    padding: 40px 0;
-}
-
-.hobbies h3{
-    padding: 20px;
-    font-size: 30px;
-    color: #454545;
-    font-weight: 700;
-    font-family: 'Playfair Display', serif;
-}
-
 .hobbies-line{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
 }
-
 
 /*formación academica*/
 
@@ -315,10 +274,6 @@ select:focus {
 }
 
 /*experiencia*/
-.experience{
-    padding: 40px 0;
-    background: linear-gradient(180deg,#afb9e8 2%,#201273 9%,#4d3ea7 25%,#4d3ea7 85%,#201273 98%);
-}
 
 .experiencia-box {
     margin: 0 32px 20px 32px;
@@ -330,6 +285,8 @@ select:focus {
     border-radius: 20px;
     margin-bottom: 10px;
     margin-top: 10px;
+    background: rgba(0, 0, 0,0.5);
+    opacity: 0.90;
 }
 
 .info-container h2{
@@ -367,7 +324,7 @@ span.experience-demo button {
     margin-left: 16px;
     border: 1px solid #a80101;
     border-radius: 10px;
-    background: #ff0800c2;
+    background: #f31d16;
     color: #fff4dc;
     margin-top: 5px;
 }
@@ -375,7 +332,7 @@ span.experience-demo button {
 /*footeer*/
 
 section.footer {
-    background: linear-gradient(180deg, #afb9e8 2%, rgba(248,248,248,1) 43%);
+    background: linear-gradient(0deg, #f6f6f6,#e51a4c);
 }
 
 div.rodape {
