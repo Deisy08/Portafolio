@@ -20,7 +20,7 @@ const experienciaData = [
     title: 'AstromeliaGreek',
     challenge: 'Challenge Oracle',
     repoLink: 'https://github.com/Deisy08/AstromeliaGeek',
-    demoLink: '#'
+    demoLink: 'https://astromelia-geek.vercel.app/'
   },
   {
     imageSrc: 'assets/heflix.png',

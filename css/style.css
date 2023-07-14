@@ -11,7 +11,7 @@ body {
     cursor: pointer;
     line-height: 1;
     color: #111111;
-    background: #e51a4c;
+    background: #f0f0f0;
 }
 
 ol,
@@ -22,12 +22,11 @@ li {
 
 a {
     text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
+    color:#111111
 }
 
 a:hover{
-    color: #132d50;
+    color: #110557;
     text-decoration: underline;
 }
 
@@ -47,6 +46,7 @@ select:focus {
 /*menu*/
 .menu{
     text-align: start;
+    background: #d6ab69;
 }
 
 .menu header{
@@ -157,6 +157,7 @@ select:focus {
     justify-content: center;
     height: 100vh;
     padding: 0 20px;
+    background: #d6ab69;
 }
 
 .title-container{
@@ -170,7 +171,6 @@ select:focus {
     width: 250px;
     height: 250px;
     overflow: hidden;
-    transform: rotate(-45deg);
     position: relative;
     z-index: 1;
 }
@@ -209,7 +209,7 @@ select:focus {
     text-align: center;
 }
 
-/*titulo --*/
+/*titulo h2 y espacio--*/
 .section-title {
     font-size: 30px;
     font-weight: 700;
@@ -222,9 +222,20 @@ select:focus {
 }
 
 /*sobre mi*/
+.about-container p{
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
 
+.about-container img{
+    padding-left: 10px;
+}
 
 /*skills*/
+
+.skills{
+    background: #d6ab69;
+}
 
 .skills-line{
     display: flex;
@@ -235,7 +246,7 @@ select:focus {
 .box{
     display: flex;
     border: 5px solid #510a0a;
-    background-color: rgb(255 191 191);
+    background-color: rgb(240, 240, 240);
     border-style: inset;
     border-radius: 10px;
     margin: 10px;
@@ -274,6 +285,10 @@ select:focus {
 }
 
 /*experiencia*/
+
+.experience{
+    background: #d6ab69;
+}
 
 .experiencia-box {
     margin: 0 32px 20px 32px;
@@ -332,7 +347,7 @@ span.experience-demo button {
 /*footeer*/
 
 section.footer {
-    background: linear-gradient(0deg, #f6f6f6,#e51a4c);
+    background: linear-gradient(0deg, #f6f6f6,#f3e6d5);
 }
 
 div.rodape {
@@ -361,7 +376,7 @@ div.rodape {
 @media (min-width: 700px) {
 
     .espacios {
-        padding: 0 50px;
+        padding: 40px calc(50vw - 340px);
     }
 
     .section-title {
@@ -369,22 +384,32 @@ div.rodape {
     }
 
     .box {
-        background: #4392d745;
-        border: #1835c5;
         border-style: inset;
     }
 
     /*menu*/
 
     .menu{
-        background: #201273;
-        border-bottom: 3px solid #110557;
-        box-shadow: 0 0 10px #110557;
+        border-bottom: 3px solid #111111;
+        box-shadow: 0 0 10px #111111;
+        background: #e9a847;
     }
 
     .menuBarra{
         display: flex;
         justify-content: space-between;
+    }
+
+    .menu-lg{
+        color: rgb(240, 240, 240);
+    }
+
+    .menuBarra-container{
+        display: none;
+    }
+
+    .box-shadow-menu{
+        display: none;
     }
 
     .menu-list{
@@ -409,63 +434,43 @@ div.rodape {
     /*title*/
 
     .title {
-        height: 35vh;
-        background: linear-gradient(180deg, rgba(32,18,115,1) , rgba(175,185,232,1) );
+        height: 400px;
         justify-content: center;
     }
 
     .title-container{
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: row-reverse;
         padding-top: 0;
     }
 
     .title-texto{
-        max-width: 300px;
-        text-align: start;
+        max-width: 420px;
         margin-top: 0;
-        margin-bottom:0;
+        margin-bottom: 0;
     }
 
     .title-btn{
         display: none;
     }
 
-    /*sobre mi*/
-    .about {
-        background: linear-gradient(180deg,rgba(175,185,232,1) ,#ced6ff );
-        padding: 40px 30px;
+    .title-texto h2{
+        text-align: start;
     }
 
-    .about-container h3 {
-        padding-bottom: 20px;
-    }
-    
-    .about-container p,.about-container img {
-        padding: 0 20px;
-    }
+    /*sobre mi*/
+
+  
 
     /*Skills*/
-    .skills {
-        padding: 40px 30px;
-        background: linear-gradient(180deg,#ced6ff ,#afb9e8 );
-    }
+
 
     .skills-line {
         padding: 0 20px;
     }
 
     /*Hobbies*/
-    .hobbies {
-        background: #afb9e8;
-        padding: 40px 30px;
-    }
-
-    .hobbies h3 {
-        padding: 0;
-        padding-bottom: 20px;
-    }
-
+    
     .hobbies-line {
         padding: 0 20px;
     }
@@ -473,10 +478,6 @@ div.rodape {
     /*experiencia academica*/
 
     /*experiencia profecional*/
-    .experience {
-        padding: 40px 30px;
-        background: linear-gradient(180deg,#afb9e8 ,#988cdf);
-    }
 
     .experiencia-contenedor {
         display: flex;
@@ -495,8 +496,6 @@ div.rodape {
         height: 200px;
         border-radius: 20px;
         margin: 10px 0;
-        background: rgba(0, 0, 0,0.5);
-        opacity: 0.75;
     }
 
     .experience-description {
@@ -509,7 +508,9 @@ div.rodape {
 
     /*main*/
 
-    
+    .espacios {
+        padding: 40px calc(50vw - 400px);
+    }
 
     /*Menu*/
     .menuBarra {
@@ -519,81 +520,20 @@ div.rodape {
 
 
     /*title*/
-    .title-container{
-        justify-content: space-around;
-        flex-direction: row-reverse;
-        padding-top: 0;
-    }
-
+   
     .title {
-        height: 40vh;
+        height: 400px;
     }
     
     .title-texto {
         max-width: 500px;
     }
 
-    /*sobre mi*/
-    .about {
-        padding: 40px calc(50vh - 400px);
-    }
-    
 
-    /*Skills*/
-    .skills {
-        padding: 40px calc(50vh - 400px);;
-    }
-    
-
-    /*Hobbies*/
-    .hobbies {
-        padding: 40px calc(50vh - 400px);
-    }
-
-    /*formación academica*/
-
-
-    /*formación profecional*/
-    .experience {
-        padding: 40px calc(50vh - 400px);
-    }
 
     .experiencia-box {
         margin: 0 0 20px;
         width: 350px;
     }
-    
 
-    /*Footer*/
-
-}
-
-@media (min-width: 1440px) {
-
-    /*sobre mi*/
-    .about {
-        padding: 40px calc(50vh - 300px);
-    }
-    
-
-    /*Skills*/
-    .skills {
-        padding: 40px calc(50vh - 300px);;
-    }
-    
-
-    /*Hobbies*/
-    .hobbies {
-        padding: 40px calc(50vh - 300px);
-    }
-
-    /*formación academica*/
-
-
-    /*formación profecional*/
-    .experience {
-        padding: 40px calc(50vh - 300px);
-    }
-
-    
 }

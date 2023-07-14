@@ -3,11 +3,10 @@ const skillsData = [
     { iconSrc: 'assets/htlm.png', name: 'HTML 5' },
     { iconSrc: 'assets/js_icon.png', name: 'Javascript' },
     { iconSrc: 'assets/git_icon.png', name: 'Git' },
-    { iconSrc: 'assets/nodejs_icon.png', name: 'Node JS' },
     { iconSrc: 'assets/figma_icon.png', name: 'Figma' },
     { iconSrc: 'assets/css_icon.png', name: 'CSS' },
-    { iconSrc: 'assets/css_icon.png', name: 'React' },
-    { iconSrc: 'assets/css_icon.png', name: 'SQL' }
+    { iconSrc: 'assets/react.png', name: 'React' },
+    { iconSrc: 'assets/sql.png', name: 'SQL' }
 ];
 
 // Recorre los datos de habilidades y crea los elementos HTML

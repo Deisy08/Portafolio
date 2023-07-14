@@ -179,9 +179,6 @@ h2.contact-title {
 
 @media (min-width: 700px) {
     /*contacto*/
-    section.formcontato {
-        padding: 40px 30px;
-    }
 
     .contact-text .section-title{
         padding: 20px;
@@ -189,7 +186,6 @@ h2.contact-title {
 
     .contact-text .contact-subtext{
         padding: 20px;
-        color: gainsboro;
     }
 
     section.formcontato form {
