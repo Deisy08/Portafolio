@@ -59,6 +59,7 @@
                         <h2>Hola, mucho gusto</h2>
                         <h2>Mi nombre es Deisy Trujillo Sanchez </h2>
                         <h2>Soy programadora junior y construyo paginas web</h2>
+                        <a class="titleBtnCV" href="././assets/cv/curriculum.pdf" download>curriculum</a>
                     </div>
                 </div>
             
@@ -126,7 +127,7 @@
                         <h2>Contacto</h2>
                         <h3 class="contact-subtext">¿Quieres contactarme?</h3>
                         <h3 class="contact-subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                        <form action="https://formsubmit.co/672d615985b1c73cab5afa4b682ad52a" method="POST" class="contact-form" name="form">
+                        <form class="contact-form" name="form">
                             <div class="input-container">
                                 <input type="text" name="nombre" class="input" id="name" placeholder="Nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" minlength="5" maxlength="50" required data-tipo="nombre">
                                 <label class="label" for="name">Nombre</label>  
@@ -147,19 +148,15 @@
                                 <label class="label" for="mensaje">Mensaje</label>
                                 <span class="mensaje-error">Este campo no es valido</span>
                             </div>
-                            <button type="submit" class="button">Enviar mensaje</button>
 
+                            <button type="submit" class="button" id="btnEnviar">Enviar mensaje</button>
+                          
                             <div class="contact-form-loader none">
                                 <img src="./assets/loader.svg" alt="cargando">
                             </div>
                             <div class="contact-form-response none">
                                 <p>Los datos han sido enviados</p>
                             </div>
-
-                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
-                            <input type="hidden" name="_next" value="https://deisy08.github.io/Portafolio/">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_template" value="table">
                         </form>
                         
                     </div>
@@ -172,7 +169,6 @@
                     <ul class="rodape-container">
                         <li><a href="https://github.com/Deisy08"><img class="rodape-iconos" src="assets/github_icon.png"></a></li>
                         <li><a href="https://www.linkedin.com/in/trujillosanchezdeisy23/"><img class="rodape-iconos" src="assets/linkedin_icon.png"></a></li>
-                        <!--li><a href="././assets/cv/curriculum.pdf" download><img class="rodape-iconos" src="assets/cv_icon.png"></a></!--li-->
                     </ul>
                 </nav>
                 <div>
@@ -188,5 +184,6 @@
 <script src="./js/hobbies.js"></script>
 <script src="./js/experience.js"></script>
 <script src="./js/menu.js"></script>
+<script src="./js/contacto.js"></script>
 </body>
 </html>
