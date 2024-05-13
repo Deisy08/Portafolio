@@ -90,7 +90,7 @@ select:focus {
 
 /*para la barra lateral*/
 .bloque_inicio{
-    background-image: url('/assets/fondoMenu.jpg') 50% 0%;
+    background-image: url("https://mouredev.com/wp-content/uploads/2018/11/mouredev_portfolio_1920x1000-768x400.jpg") 50% 0%;
     margin-top: 0px;
     background-repeat: no-repeat;
     background-size: cover;
