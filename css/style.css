@@ -90,7 +90,7 @@ select:focus {
 
 /*para la barra lateral*/
 .bloque_inicio{
-    background: url('/assets/fondo1.jpg') 50% 0%;
+    background: url('/assets/fondoMenu.jpg') 50% 0%;
     margin-top: 0px;
     background-repeat: no-repeat;
     background-size: cover;
