@@ -25,7 +25,6 @@
     font-size: 30px;
     font-weight: 700;
     font-family: 'Playfair Display', serif;
-    padding: 0 0 20px 0;
 }
 
 .contact-img{
@@ -180,12 +179,8 @@ h2.contact-title {
 @media (min-width: 700px) {
     /*contacto*/
 
-    .contact-text .section-title{
-        padding: 20px;
-    }
-
     .contact-text .contact-subtext{
-        padding: 20px;
+        padding: 0 20px 20px;
     }
 
     section.formcontato form {

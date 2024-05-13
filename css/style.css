@@ -207,6 +207,11 @@ select:focus {
     font-size: 14px;
 }
 
+.title-texto a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .title-texto .title-linea{
     padding: 7rem 1rem 0 0.5rem;
     width: 50%;
@@ -318,23 +323,13 @@ select:focus {
     margin: 0 32px 20px 32px;
 }
 
-.experiencia-box img{
+.experiencia-box img {
     width: 100%;
     height: 200px;
     border-radius: 20px;
     margin-bottom: 10px;
     margin-top: 10px;
-    position: relative;
-}
-
-.experiencia-box img::before{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+    filter: brightness(80%);
 }
 
 .info-container h2{
@@ -380,7 +375,7 @@ span.experience-demo button {
 /*footeer*/
 
 section.footer {
-    background: linear-gradient(180deg, #f6f6f6,#ffa792);
+    background: linear-gradient(180deg, #f0f0f0 5%,#ffa792);
 }
 
 div.rodape {
@@ -413,7 +408,7 @@ div.rodape {
     }
 
     .section-title {
-        padding: 0 20px 20px 0;
+        padding-left: 1rem;
     }
 
     .box {
@@ -431,6 +426,7 @@ div.rodape {
     .menuBarra{
         display: flex;
         justify-content: space-between;
+        flex-direction: row-reverse;
     }
 
     .menu-lg{
@@ -475,13 +471,6 @@ div.rodape {
         justify-content: space-around;
         flex-direction: row-reverse;
         padding-top: 0;
-    }
-
-    .title-texto{
-        max-width: 420px;
-        margin-top: 0;
-        align-items: flex-start;
-        margin-bottom: 0;
     }
 
     .title-btn{
